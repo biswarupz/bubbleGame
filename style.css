@@ -1,0 +1,160 @@
+* {
+margin:0;
+padding:0;
+box-sizing:border-box;
+
+}
+
+html, body {
+height:100%;
+width:100%;
+}
+#main{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(210, 230, 197);
+}
+#panel{
+    overflow: hidden;
+    height: 80%;
+    width: 80%;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+#point{
+
+    width: 100%;
+    height: 100px;
+    background-color: rgb(91, 117, 88);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15%;
+
+}
+
+.elem{
+    color: rgb(59, 77, 59);
+    height: 40px;
+    width: auto;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    font-family:sans-serif;
+    padding: 10px 15px;
+    border-radius: 7px;
+    gap: 10px;
+
+
+}
+.box{
+    margin-left: 20px;
+    font-size: 20px;
+    
+
+
+}
+#game{
+    color: white;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 20px;
+    height: calc(100% - 100px);
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    gap: 10px;
+
+}
+.buble{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+height: 40px;
+width: 40px;
+background-color: rgb(242, 153, 51);
+border-radius: 50%;
+flex-wrap: wrap;
+cursor: pointer;
+
+}
+.buble:hover{
+    background-color: rgb(211, 102, 0);
+}
+
+
+
+#startBtn{
+    position: fixed;
+    background-color: rgb(113, 131, 90);
+    left: 50%;
+    top: 50%;
+    z-index: 99;
+    width: 200px;
+    height: 90px;
+    transform: translate(-50%,-50%);
+    border: none;
+    border-radius: 20px;
+    font-size: 30px;
+    color: white;
+}
+h1{
+margin-left: 40%;
+}
+#hit{
+
+    color: rgb(210, 0, 0);
+    font-size: 40px;
+}
+.hitElem{
+    color: rgb(59, 77, 59);
+    gap: 10px;
+    font-family: sans-serif;
+    display: flex;
+    height: 60px;
+    background-color: white;
+    width: 120px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+#scoreBoard{
+height: 170px;
+width: 300px;
+position: fixed;
+z-index: 100;
+background-color:rgb(113, 131, 90);
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+text-align: center;
+border-radius: 20px;
+display:none;
+}
+#runs{
+margin-top: 20px;
+font-size: 20px;
+font-family: sans-serif;
+color: white;
+display: block;
+}
+#restart{
+
+    margin-top: 20px;
+    height: auto;
+    background-color:rgb(240, 116, 0) ;
+    padding: 10px 20px 15px 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+    font-weight: bolder;
+    
+}
+#endScore{
+    color: white;
+    font-size: 22px;
+}
